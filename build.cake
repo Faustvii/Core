@@ -8,7 +8,7 @@ Task("Restore-NuGet-Packages")
 
 Task("Clean")
     .Does(() => {
-        var directoriesToClean = GetDirectories("./src/****/bin/");
+        var directoriesToClean = GetDirectories("./src/**/bin");
         foreach(var dirt in directoriesToClean){
             Information("Cleaning {0}", dirt);
         }
