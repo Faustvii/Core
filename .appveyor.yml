@@ -17,4 +17,3 @@ test: off
 #---------------------------------#
 cache:
   - tools -> build.cake # cake tools cache
-  - '%USERPROFILE%\.nuget\packages -> **\project.json'  # project.json cache
